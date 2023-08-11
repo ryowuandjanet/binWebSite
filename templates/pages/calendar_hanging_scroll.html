@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}年曆掛軸{% endblock title %}
+
+{% block content %}
+
+<div style="display: flex;justify-content: center;align-items: center;">
+  <div style="width: 80%;">
+    <div>
+      <hr style="border-width: 3px;border-color: #cccccc;">
+      <div class="row">
+        <div style="font-size:40pt;font-weight: bold;width: 50%;">
+          |  精美年曆  |
+        </div>
+        <div style="font-size:16pt;margin-left:10px;">
+          <div style="color:red;font-weight: bold;">讓客戶一年365天與您天天相見歡</div>
+          <div>基本訂量50支可加印個人與公司資料【需加50元運費】 </div>
+          <div>購滿100支即可免費單色網版印刷</div>
+          <div>實際尺寸：57×77.5cm </div>
+          <div>印刷尺寸：46×8cm </div>
+          <div>150P銅版紙 </div>
+          <div style="color:red;">年曆廣告若無指定皆印紅色字</div>
+        </div>    
+      </div>
+
+      <div class="row" style="margin-bottom: 30px;">
+        <div style="width: 33%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/201_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '94' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+
+        <div style="width: 33%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/202_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '95' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+
+        <div style="width: 33%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/203_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '96' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <hr style="border-width: 3px;border-color: #dddddd;">
+
+    <div>
+      <hr style="border-width: 3px;border-color: #cccccc;">
+      <div class="row">
+        <div style="font-size:40pt;font-weight: bold;width: 50%;">
+          |  典藏掛軸  |
+        </div>
+        <div style="font-size:16pt;margin-left:10px;">
+          <div style="color:red;font-weight: bold;">讓客戶一年365天與您天天相見歡</div>
+          <div>基本訂量50支可加印個人與公司資料【需加50元運費】 </div>
+          <div>購滿100支即可免費單色網版印刷</div>
+          <div>實際尺寸：47×89cm </div>
+          <div>印刷尺寸：36×8cm </div>
+          <div>石頭紙較不易撕破，沾染灰塵擦拭即可 </div>
+          <div style="color:red;">年曆廣告若無指定皆印紅色字</div>
+        </div>    
+      </div>
+
+      <div class="row" style="margin-bottom: 30px;">
+        <div style="width: 33%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/hy-206_1_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '97' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+
+        <div style="width: 33%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/hy-207_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '98' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+
+        <div style="width: 33%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/hy-208_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '99' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div> 
+    <hr style="border-width: 3px;border-color: #dddddd;">
+
+  </div>
+</div>
+
+{% endblock content %}

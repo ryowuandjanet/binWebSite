@@ -1,0 +1,71 @@
+{% extends '../base.html' %}
+{% load static %}
+{% block title %} Log In {% endblock title %}
+
+{% block links %}
+
+{% endblock links %}
+
+{% block content %}
+
+<!-- Page Add Section Begin -->
+<section class="page-add">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4">
+              <div class="page-breadcrumb">
+                  <h3>登錄到您的帳戶</h3>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Page Add Section End -->
+
+<!-- Contact Section Begin -->
+<div class="contact-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <form class="contact-form" novalidate method="POST">
+                {% csrf_token %}
+                  <div class="row">
+                    {% if messages %}
+                    <div class="col-lg-12 py-2">
+                      {% include '../message.html' %}
+                    </div>
+                    {% endif %}
+                      <div class="col-lg-12 py-2">
+                        <input name="username" type="text" placeholder="輸入用戶名">
+                        {{ form.username.errors}}
+                      </div>
+                      <div class="col-lg-12 py-2">
+                        <input name="password" type="password" placeholder="輸入密碼">
+                        {{ form.password.errors}}
+                    </div>
+                    <div class="col-lg-12 my-2 text-right">
+                      <p>
+                        <strong class="ml-2">
+                          <a href="{% url 'password_reset' %}" class="text-decoration-none text-dark">忘記密碼</a>
+                        </strong>
+                      </p>
+                    </div>
+                      <div class="col-lg-12 text-right">
+                          <button class="btn-block" type="submit">登錄</button>
+                      </div>
+                      <div class="col-lg-12 my-2 text-center">
+                        <p>
+                          沒有帳戶？請
+                          <strong class="ml-2">
+                            <a href="{% url 'registration' %}" class="text-decoration-none text-dark">註冊</a>
+                          </strong>
+                        </p>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Contact Section End -->
+{% endblock content %}

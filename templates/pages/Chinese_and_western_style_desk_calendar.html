@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}中西式桌曆{% endblock title %}
+
+{% block content %}
+
+<div style="display: flex;justify-content: center;align-items: center;">
+  <div style="width: 80%;">
+    <div>
+      <hr style="border-width: 3px;border-color: #cccccc;">
+      <div class="row">
+        <div style="font-size:40pt;font-weight: bold;width: 50%;">
+          | 中式彩色桌曆 |
+        </div>
+        <div style="font-size:16pt;margin-left:10px;">
+          <div style="color:red;font-weight: bold;">購滿100本即可免費燙金</div>
+          <div style="color:blue;font-weight: bold;">燙金廣告不足100本不能混搭</div>
+          <div>產品尺寸：15×24.5cm</div>
+          <div>燙金尺寸：12×2.5cm</div>
+        </div>    
+      </div>
+
+      <div class="row" style="margin-bottom: 30px;">
+        <div>
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/3201_orig.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <form action="{% url 'add-to-cart' '25' %}" method="Post">{% csrf_token %}
+            <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">HY-3202</button>
+          </form>
+        </div>
+        <div class="col-3">
+          <form action="{% url 'add-to-cart' '26' %}" method="Post">{% csrf_token %}
+            <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">HY-3203</button>
+          </form>
+        </div>
+        <div class="col-3">
+          <form action="{% url 'add-to-cart' '37' %}" method="Post">{% csrf_token %}
+            <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">HY-3204</button>
+          </form>
+        </div>
+        <div class="col-3">
+          <form action="{% url 'add-to-cart' '38' %}" method="Post">{% csrf_token %}
+            <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">HY-3205</button>
+          </form>
+        </div>
+
+      </div>
+    </div> 
+    <hr style="border-width: 3px;border-color: #dddddd;">
+
+    <div>
+      <hr style="border-width: 3px;border-color: #cccccc;">
+      <div class="row">
+        <div style="font-size:40pt;font-weight: bold;width: 50%;">
+          | 西式彩色桌曆 |    HY-3201
+        </div>
+        <div style="font-size:16pt;margin-left:10px;">
+          <div style="color:red;font-weight: bold;">購滿100本即可免費燙金</div>
+          <div>產品尺寸：22.5×17cm</div>
+          <div>燙金尺寸：12×2.5cm</div>
+        </div>     
+      </div>
+
+      <div class="row" style="margin-bottom: 30px;">
+        <div>
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/3202_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '27' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+
+    </div> 
+
+  </div>
+</div>
+
+
+{% endblock content %}

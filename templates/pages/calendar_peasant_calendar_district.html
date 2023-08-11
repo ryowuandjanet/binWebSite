@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}日曆 農民曆區{% endblock title %}
+
+{% block content %}
+
+<div style="display: flex;justify-content: center;align-items: center;">
+  <div style="width: 80%;">
+    <div>  
+      <div class="row">
+        <div style="font-size:40pt;font-weight: bold;width: 50%;">
+          | 橫八開彩色日曆 |
+        </div>
+      </div>
+      <div class="row">
+        <div style="font-size:16pt;margin-left:10px;">
+          <div>產品尺寸：35×49cm</div>
+          <div>燙金尺寸：30×7.5cm m</div>
+          <div>上方吊版可私版承製</div>
+        </div> 
+      </div>
+      <div class="row">    
+        <div style="width: 33%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/08-1_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '100' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+
+        <div style="width: 33%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/08-2_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '101' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+
+        <div style="width: 33%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/08-3_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '102' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/08-4_orig.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+      <hr style="border-width: 3px;border-color: #cccccc;">
+    </div> 
+
+    <div>  
+      <div class="row">
+        <div style="font-size:40pt;font-weight: bold;width: 50%;">
+          | 吊飾小日曆 |
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="font-size:16pt;margin-left:10px;">
+          <div>
+            <div style="color:blue;font-weight: bold;">購滿100本即可免費燙金</div>
+            <div>產品尺寸：7.8×20.2cm </div>
+            <div>日曆尺寸：7.2×9.9cm </div>
+            <div>燙金尺寸：7×5cm </div>
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '103' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div> 
+        <div  class="col">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/hy-02_orig.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <hr style="border-width: 3px;border-color: #cccccc;">
+    </div>
+
+    <div>  
+      <div class="row">
+        <div style="font-size:40pt;font-weight: bold;width: 50%;">
+          | 16K農民曆-64頁 |
+        </div>
+        <div class="col" style="font-size:16pt;margin-left:10px;">
+          <div>產品尺寸：19×26cm </div>
+        </div> 
+      </div>
+
+      <div class="row">
+        <div  class="col">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/540633875_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '104' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> 
+</div>
+
+
+{% endblock content %}

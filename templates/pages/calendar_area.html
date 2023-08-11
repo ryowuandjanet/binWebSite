@@ -1,0 +1,418 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}月曆區{% endblock title %}
+
+{% block content %}
+
+<div style="display: flex;justify-content: center;align-items: center;">
+  <div style="width: 80%;">
+    <div>
+      <hr style="border-width: 3px;border-color: #cccccc;">
+      <div>
+        <div class="row">
+          <div style="font-size:40pt;font-weight: bold;width: 50%;">
+            ​| 六開彩色雙面大月曆 |   <small style="font-weight: bold;">(13張)</small>
+          </div>
+        </div>
+  
+        <div class="row">    
+          <div style="font-size:16pt;margin-left:10px;">
+            <div style="color:red;font-weight: bold;">購滿100本即可免費燙金</div>
+            <div>實際尺寸：37×58.5cm（展開） </div>
+            <div>燙金廣告尺寸：22X3cm </div>
+            <div>網印廣告尺寸：28X4.5cm </div>
+            <div>結構特色： </div>
+            <div>封面450P銅西卡、內頁150P銅版紙、 </div>
+            <div>雙線圈裝訂質感佳 </div>
+            <div>有塑膠夾及銅扣固定所以不需要撕掉歐 </div>
+            <div style="color:red;">可加購手提塑膠袋</div>
+          </div>    
+        </div>
+      </div>
+
+      <hr style="border-width: 3px;border-color: #dddddd;">
+
+      <div>
+        <div class="row">
+          <div colspan="2" style="font-size:30px;font-weight: bold; color:#666666;">HY-03-1  日本鐵道心旅行 </div>
+        </div>
+  
+        <div class="row">
+          <span style="color:#666666;font-size:14pt;">​/  鐵道迷看過來，內容豐富介紹好吃的便當與甜點 、 好玩的鐵道沿路特色與風貌</span>
+        </div>
+  
+        <div class="row" style="margin-bottom: 30px;">
+          <div class="col">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/03-11_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '105' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/03-12_orig.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <hr style="border-width: 2px;border-color: #cccccc;border-style:dotted;">
+      </div>
+
+      <div>
+        <div class="row">
+          <div colspan="2" style="font-size:30px;font-weight: bold; color:#666666;">HY-03-2  餅乾派對 </div>
+        </div>
+  
+        <div class="row">
+          <span style="color:#666666;font-size:14pt;">/  萌度破表！可愛到讓人捨不得吃下去的手工動物造型餅乾，甜蜜溫暖你的每一天</span>
+        </div>
+  
+        <div class="row" style="margin-bottom: 30px;">
+          <div class="col">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/03-21_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '106' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/03-22_orig.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <hr style="border-width: 2px;border-color: #cccccc;border-style:dotted;">
+      </div>
+
+      <div>
+        <div class="row">
+          <div colspan="2" style="font-size:30px;font-weight: bold; color:#666666;">HY-03-3 歐洲風情-世界正美麗 </div>
+        </div>
+  
+        <div class="row">
+          <span style="color:#666666;font-size:14pt;">/  這裡有一生至少要去一次的夢幻絕景，遺世獨立山城、絕美濱海小村、中古風情小鎮、悠閒湖畔聚落、童話故事場景</span>
+        </div>
+  
+        <div class="row" style="margin-bottom: 30px;">
+          <div class="col">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/03-31_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '107' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/03-32_orig.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <hr style="border-width: 2px;border-color: #cccccc;border-style:dotted;">
+      </div>
+
+      <div>
+        <div class="row">
+          <div style="font-size:40pt;font-weight: bold;width: 50%;">
+            | 六開單面彩色記事月曆 |
+          </div>
+        </div>
+  
+        <div class="row">    
+          <div style="font-size:16pt;margin-left:10px;">
+            <div style="color:red;font-weight: bold;">購滿100本即可免費燙金</div>
+            <div>實際尺寸：67.5×37cm（展開）</div>
+            <div>網印廣告尺寸：30×8cm </div>
+            <div>圖片印刷精美，上板可挑選配圖 </div>
+            <div style="color:red;">可加購手提塑膠袋</div>
+          </div>    
+        </div>
+      </div>
+
+      <div>
+  
+        <div class="row" style="margin-bottom: 30px;">
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/06a-1_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '108' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/06a-3_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '110' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/06a-5_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '112' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 30px;">
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/06a-2_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '109' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/06a-4_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '111' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/06a-6_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '113' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <hr style="border-width: 2px;border-color: #cccccc;border-style:dotted;">
+      </div>
+
+      <div>
+        <div class="row">
+          <div style="font-size:40pt;font-weight: bold;width: 50%;">
+            | 六開凸版燙金月曆 |
+          </div>
+        </div>
+  
+        <div class="row">    
+          <div style="font-size:16pt;margin-left:10px;">
+            <div style="color:red;font-weight: bold;">購滿100本即可免費燙金</div>
+            <div>實際尺寸：67.5×37cm（展開）</div>
+            <div>網印廣告尺寸：28×4.5cm  </div>
+            <div>圖片印刷精美搭配燙金打凸更顯高級質感 </div>
+            <div>可加購手提塑膠袋 </div>
+            <div style="color:red;">上板可挑選配圖混搭</div>
+          </div>    
+        </div>
+      </div>
+
+      <div>
+  
+        <div class="row" style="margin-bottom: 30px;">
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/hy-06b_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '114' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/b-2_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '115' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/b-3_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '116' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" style="margin-bottom: 30px;">
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/b-4_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '117' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/b-5_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '118' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/b-6_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '119' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <hr style="border-width: 2px;border-color: #cccccc;border-style:dotted;">
+      </div>
+
+      <div>
+        <div class="row">
+          <div style="font-size:40pt;font-weight: bold;width: 50%;">
+            | 六開晶鑽凸版燙金月曆 |
+          </div>
+        </div>
+  
+        <div class="row">    
+          <div style="font-size:16pt;margin-left:10px;">
+            <div style="color:red;font-weight: bold;">購滿100本即可免費燙金</div>
+            <div>實際尺寸：67.5×37cm（展開）</div>
+            <div>網印廣告尺寸：28×4.5cm </div>
+            <div>圖片印刷精美搭配五彩金蔥&燙金打凸更顯高級質感 </div>
+            <div>上下紙板厚度為36盎司，採用紅繩固定 </div>
+            <div>可加購手提塑膠袋 </div>
+            <div style="color:red;">上板可挑選配圖混搭</div>
+          </div>    
+        </div>
+      </div>
+
+      <div>
+  
+        <div class="row" style="margin-bottom: 30px;">
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/c-1_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '120' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/06c-2_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '121' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/published/06c-3.jpg?1691050766" alt="">
+            </div>
+          </div>
+        </div>
+
+        <hr style="border-width: 2px;border-color: #cccccc;border-style:dotted;">
+      </div>
+
+      <div>
+        <div class="row">
+          <div style="font-size:40pt;font-weight: bold;width: 50%;">
+            | 三折式月曆 |
+          </div>
+        </div>
+  
+        <div class="row">    
+          <div style="font-size:16pt;margin-left:10px;">
+            <div style="color:red;font-weight: bold;">附日期膠條、信封袋</div>
+            <div style="font-weight: bold;">2款上版可任選</div>
+            <div style="font-weight: bold;">購滿100本即可免費印</div>
+            <div style="color: red;">A款產品尺寸：35X80.5cm</div>
+            <div>廣告方式：(上)燙紅金 </div>
+            <div>燙金尺寸：18X5cm </div>
+            <div style="color: red;">B款產品尺寸35X87.5cm</div>
+            <div>廣告方式：(下)燙紅金 </div>
+            <div>燙金尺寸：25X5cm </div>
+          </div>    
+        </div>
+      </div>
+
+      <div>
+  
+        <div class="row" style="margin-bottom: 30px;">
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/published/09a-1.jpg?1691047824" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '122' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/09b-1_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '123' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-4">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/09a-3_orig.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <hr style="border-width: 2px;border-color: #cccccc;border-style:dotted;">
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %}

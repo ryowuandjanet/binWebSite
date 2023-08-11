@@ -1,0 +1,103 @@
+{% load static %}
+{% block links %}
+<style>
+	.navbar {
+		background-color: #dddddd;
+	}
+	.navbar-brand {
+		color:black;
+		font-size: 24pt;
+		font-weight: bold;	
+	}
+	.nav-link {
+		font-size: 18pt;
+		color:black;
+		font-weight: bold;
+	}
+</style>
+{% endblock links %}
+
+  <!-- Navbar -->
+
+	<nav class="navbar navbar-expand-lg">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/">大熊廣告印刷設計</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" href="/">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="{% url 'about' %}">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="{% url 'tdca' %}">三角台曆區</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="{% url 'cawsdc' %}">中西式桌曆</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="{% url 'ca' %}">月曆區</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="{% url 'chs' %}">年曆掛軸</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="{% url 'cpcd' %}">日曆 農民曆區</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="{% url 'nba' %}">便條盒區</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="{% url 'bh' %}">工商手冊</a>
+					</li>
+
+
+					{% if not request.user.is_authenticated %}
+						<li class="nav-item">
+                <a href="{% url 'registration' %}">註冊 / </a>
+                <a href="{% url 'login' %}" class="in">登錄</a>
+            </li>
+          {% else %}
+						<li class="nav-item">
+							<a href="{% url 'logout' %}">登出</a>
+							<a href="#">訂單</a>
+							<a href="{% url 'change_password' %}">修改密碼</a>
+						</li>
+						<!--
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<img src="{% static 'img/icons/man.png' %}" alt="">
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="{% url 'logout' %}">登出</a></li>
+									<li><a class="dropdown-item" href="#">訂單</a></li>
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item" href="{% url 'change_password' %}">修改密碼</a></li>
+								</ul>
+							</li>
+						-->
+          {% endif %}
+
+				</ul>
+				
+			</div>
+			<div >
+				<img src="{% static 'img/icons/search.png' %}" alt="" class="search-trigger mx-3">
+				<a href="{% url 'cart' %}">
+						<img src="{% static 'img/icons/bag.png' %}" alt="">
+						<span>{{cart|length}}</span>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	{% block extra_scripts %}
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+  {% endblock extra_scripts %}
+
+

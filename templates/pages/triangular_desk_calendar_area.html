@@ -1,0 +1,329 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}三角台區{% endblock title %}
+
+
+
+{% block content %}
+
+<div style="display: flex;justify-content: center;align-items: center;">
+  <div style="width: 80%;">
+    <div class="row">
+      <div class="col"><button style="font-size:24pt;font-weight: bold;">超大本三角台曆</button></div>
+      <div class="col"><button style="font-size:24pt;font-weight: bold;">25K三角台月曆</button></div>
+      <div class="col"><button style="font-size:24pt;font-weight: bold;">25K燙金三角台月曆</button></div>
+      <div class="col"><button style="font-size:24pt;font-weight: bold;">迷你+100K小月曆</button></div>
+    </div>
+    <div>
+      <hr style="border-width: 3px;border-color: #cccccc;">
+      <div class="row">
+        <div style="font-size:40pt;font-weight: bold;width: 50%;">
+          | 超大本三角台 | <small style="font-weight: bold;">(13張)</small>
+        </div>
+        <div style="font-size:16pt;margin-left:10px;">
+          <div style="color:red;font-weight: bold;">購滿100本即可免費燙金</div><span>(附自黏袋)</span>
+          <div>月曆尺寸：25×14.5cm </div>
+          <div>產品尺寸：25×22.3cm</div>
+          <div>燙金尺寸：20×2.3cm </div>
+          <div style="color:blue;">月曆採用200p雪銅卡紙</div>
+          <div style="color:blue;">​底座採用硬紙板+進口美術紙  </div>
+        </div>    
+      </div>
+      <hr style="border-width: 3px;border-color: #dddddd;">
+      <div class="row">
+        <div colspan="2" style="font-size:30px;font-weight: bold; color:#666666;">HY-20A  台灣漫遊 </div>
+      </div>
+      <div class="row" style="margin-bottom: 30px;">
+        <div style="width: 50%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/20-1-2_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '21' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/20-1_orig.jpg" alt="">
+        </div>
+      </div>
+      <hr style="border-width: 2px;border-color: #cccccc;border-style:dotted;">
+
+      <div class="row">
+        <div colspan="2" style="font-size:30px;font-weight: bold; color:#666666;">HY-20B  開運招財 </div>
+      </div>
+      <div class="row" style="margin-bottom: 30px;">
+        <div style="width: 50%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/20-2-1_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '22' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/20-2_orig.jpg" alt="">
+        </div>
+      </div>
+    </div> 
+
+    <div>
+      <hr style="border-width: 3px;border-color: #cccccc;">
+      <div class="row">
+        <div style="font-size:40pt;font-weight: bold;width: 50%;">
+          | 25K三角台 | <small style="font-weight: bold;">(16張)</small>
+        </div>
+        <div style="font-size:16pt;margin-left:10px;">
+          <div style="color:red;font-weight: bold;">購滿100本即可免費燙金</div><span>(附自黏袋)</span>
+          <div>月曆尺寸：20.5×14.5cm </div>
+          <div>產品尺寸：20.5×18.5cm</div>
+          <div>燙金尺寸：16×2.3cm </div>
+          <div style="color:blue;">月曆採用150p雪銅</div>
+          <div style="color:blue;">底座採用硬紙板+美術紙</div>
+        </div>    
+      </div>
+      <hr style="border-width: 3px;border-color: #dddddd;">
+      <div class="row">
+        <div class="col" style="font-size:30px;font-weight: bold; color:#666666;width: 50%;">​HY-25A  讓心情曬曬太陽</div>
+        <div class="col" style="font-size:16pt;margin-left:10px;">如果治癒有顏色，那一定是海的顏色。溫暖的陽光能 傳遞飽滿的元氣，拋開鬱抑情緒，輕鬆曬出好心情~</div>
+      </div>
+      <div class="row" style="margin-bottom: 30px;">
+        <div style="width: 50%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/25k-2501_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '23' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/25k-2502_orig.jpg" alt="">
+        </div>
+      </div>
+      <hr style="border-width: 2px;border-color: #cccccc;border-style:dotted;">
+
+      <div class="row">
+        <div class="col" style="font-size:30px;font-weight: bold; color:#666666;width: 50%;">HY-25B 日本鐵道旅行去</div>
+        <div class="col" style="font-size:16pt;margin-left:10px;">/  走吧！一起搭乘鐵道漫遊慢賞，品嚐當地道地美食。鐵道旅行新體驗、與你分享關於夢想與旅行的感動！</div>
+      </div>
+      <div class="row" style="margin-bottom: 30px;">
+        <div style="width: 50%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/25k-2503_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '24' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/25k-2504_orig.jpg" alt="">
+        </div>
+      </div>
+      <hr style="border-width: 2px;border-color: #cccccc;border-style:dotted;">
+
+      <div class="row">
+        <div class="col" style="font-size:30px;font-weight: bold; color:#666666;width: 50%;">HY-25C 夢幻城市歐洲行</div>
+        <div class="col" style="font-size:16pt;margin-left:10px;">/ 一生至少要去一次的夢幻絕景，遺世獨立山城、絕美濱海小村、中古風情小鎮、悠閒湖畔聚落、童話故事場景...</div>
+      </div>
+      <div class="row" style="margin-bottom: 30px;">
+        <div style="width: 50%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/25-05_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '29' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/25-06_orig.jpg" alt="">
+        </div>
+      </div>
+      <hr style="border-width: 2px;border-color: #cccccc;border-style:dotted;">
+
+      <div class="row">
+        <div class="col" style="font-size:30px;font-weight: bold; color:#666666;width: 50%;">HY-25D 餅乾森林</div>
+        <div class="col" style="font-size:16pt;margin-left:10px;">/  萌度破表！全部是可愛到讓人捨不得吃下去的手工動物造型餅乾，甜蜜溫暖你的每一天~</div>
+      </div>
+      <div class="row" style="margin-bottom: 30px;">
+        <div style="width: 50%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/07_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '30' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/08_orig.jpg" alt="">
+        </div>
+      </div>
+      <hr style="border-width: 2px;border-color: #cccccc;border-style:dotted;">
+
+
+
+    </div>
+
+    <div>
+      <hr style="border-width: 3px;border-color: #cccccc;">
+      <div class="row">
+        <div style="font-size:40pt;font-weight: bold;width: 50%;">
+          | 25K燙金三角台 | <small style="font-weight: bold;">(14張)</small>
+        </div>
+        <div style="font-size:16pt;margin-left:10px;">
+          <div style="color:red;font-weight: bold;">購滿100本即可免費燙金</div><span></span>
+          <div>月曆尺寸：20.5×14.5cm </div>
+          <div>產品尺寸：20.5×18.5cm</div>
+          <div>燙金尺寸：16×2.3cm </div>
+          <div style="color:blue;">封面採用250p銅西卡&上霧膜燙金</div>
+          <div style="color:blue;">內頁採用180p雪銅</div>
+          <div style="color:blue;">底座採用硬紙板+美術紙</div>
+          <div>(附自黏袋) </div>
+        </div>    
+      </div>
+      <hr style="border-width: 3px;border-color: #dddddd;">
+      <div class="row" style="margin-bottom: 30px;">
+        <div style="width: 50%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/tg-01_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '31' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+
+        <div style="width: 50%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/000tg-03_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '32' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+
+        <div style="width: 50%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/tg-02_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '33' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+
+        <div style="width: 50%;">
+          <div>
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/tg-04_orig.jpg" alt="">
+          </div>
+          <div>
+            <form action="{% url 'add-to-cart' '34' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div colspan="2" style="font-size:30px;font-weight: bold; color:red;">燙金三角台內頁展示</div>
+      </div>
+
+      <div class="row">
+        <div style="width: 50%;">
+          <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/hy-2505_orig.jpg" alt="">
+        </div>
+        <div style="width: 50%;">
+          <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/hy-2506_orig.jpg" alt="">
+        </div>
+      </div>
+
+      <hr style="border-width: 3px;border-color: #cccccc;">
+      <div class="row">
+        <div style="font-size:40pt;font-weight: bold;width: 50%;">
+          | 60K三角台曆 | 
+        </div>
+      </div>
+      <div class="row">
+        <div colspan="2" style="font-size:30px;font-weight: bold; color:#666666; width: 50%;">​HY-60 就是辣麼愛你(可愛造型動物餅乾)</div>
+        <div style="font-size:16pt;margin-left:10px;">
+          <div style="color:red;font-weight: bold;">購滿100本即可免費燙金</div><span></span>
+          <div>實際尺寸：14.8×10.8cm  </div>
+          <div>燙金尺寸：9×1.8cm  </div>
+        </div>   
+      </div>
+      <div class="row">
+        <div style="width: 50%;">
+          <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/60-1_orig.jpg" alt="">
+          <div>
+            <form action="{% url 'add-to-cart' '35' %}" method="Post">{% csrf_token %}
+              <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+            </form>
+          </div>
+        </div>
+        <div style="width: 50%;">
+          <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/60-2_orig.jpg" alt="">
+        </div>
+      </div>
+
+      <div>
+        <hr style="border-width: 3px;border-color: #cccccc;">
+        <div class="row">
+          <div style="font-size:40pt;font-weight: bold;width: 50%;">
+            | 100K 超迷你小月曆 | 
+          </div>
+          <div style="font-size:16pt;margin-left:10px;">
+            <div style="color:red;font-weight: bold;">購滿100本即可免費燙金</div><span></span>
+            <div>實際尺寸：9×7.8×4.2cm </div>
+            <div>單面廣告 燙金尺寸：7×1.3cm </div>
+            <div style="color:blue;">月曆為150g銅版紙+底座採用高級黑卡 </div>
+          </div>    
+        </div>
+        <div class="row">
+          <div colspan="2" style="font-size:30px;font-weight: bold; color:#666666;">​HY-100  有你真好(可愛造型動物餅乾) </div>
+        </div>
+        <div class="row" style="margin-bottom: 30px;">
+          <div style="width: 50%;">
+            <div>
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/100-1_orig.jpg" alt="">
+            </div>
+            <div>
+              <form action="{% url 'add-to-cart' '36' %}" method="Post">{% csrf_token %}
+                <button style="cursor: pointer; font-size:30pt;margin-top: 20px;margin-left: 20px;" type="submit" class="btn btn-primary">加入購物車</button>
+              </form>
+            </div>
+          </div>
+          
+          <div class="col-lg-6">
+            <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/100-2_orig.jpg" alt="">
+          </div>
+        </div>
+        <hr style="border-width: 2px;border-color: #cccccc;border-style:dotted;">
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

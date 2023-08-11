@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{% endblock title %}
+
+{% block content %}
+
+{% include 'slider.html' %}
+
+
+<div class="container-fluid" style="padding: 50px;" >
+    <!-- Carousel -->
+    <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/1644706616_orig.jpg" class="w-100" alt="">
+
+    <!-- card -->
+    <div class="row mt-4">
+        <!-- 三角台曆區 -->
+        <div class="col">
+            <div class="card">
+            <a href="{% url 'tdca' %}">
+                <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/942654648_orig.jpg"  alt="...">
+            </a>
+            </div>
+        </div>
+
+        <!-- 月曆區 -->
+        <div class="col">
+          <div class="card">
+            <a href="{% url 'ca' %}">
+                <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/484110301_orig.jpg"  alt="...">
+            </a>
+          </div>
+        </div>
+
+        <!-- 年曆 掛軸區 -->
+        <div class="col">
+          <div class="card">
+            <a href="{% url 'chs' %}">
+                <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/1479900923_orig.jpg"  alt="...">
+            </a>
+          </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+      <!-- 中西式桌曆 -->
+      <div class="col">
+        <div class="card">
+          <a href="{% url 'cawsdc' %}">
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/175403403_orig.jpg"  alt="...">
+          </a>
+        </div>
+      </div>
+
+      <!-- 工商手冊區 -->
+      <div class="col">
+        <div class="card">
+          <a href="{% url 'bh' %}">
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/2128708269_orig.jpg"  alt="...">
+          </a>
+        </div>
+      </div>
+
+      <!-- 日曆 農民曆 -->
+      <div class="col">
+        <div class="card">
+          <a href="{% url 'cpcd' %}">
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/405824704_orig.jpg"  alt="...">
+          </a>
+        </div>
+      </div>
+        
+    </div>
+
+    <div class="row mt-4">
+      <!-- 各式便條區 -->
+      <div class="col">
+        <div class="card">
+          <a href="{% url 'nba' %}">
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/1178546123_orig.jpg"  alt="...">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <!-- 多元化私版商品訂購 -->
+      <div class="col">
+        <div class="card">
+          <a href="#">
+              <img src="https://2626731.weebly.com/uploads/1/0/9/3/109388399/573798035_orig.jpg"  alt="...">
+          </a>
+        </div>
+      </div>
+    </div>
+
+</div>
+  
+  <!-- Footer -->
+  <div class="card">
+    <div class="card-body bg-dark">
+      <blockquote class="blockquote mb-0 text-white">
+        <p>版權所有，翻印必究</p>
+        <footer class="blockquote-footer text-light">歡迎參觀選購 <cite title="Source Title">記得常回來</cite></footer>
+      </blockquote>
+    </div>
+  </div>
+
+{% endblock content %}

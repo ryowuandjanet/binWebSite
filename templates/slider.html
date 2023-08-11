@@ -1,0 +1,8 @@
+{% load static %}
+<section class="hero-slider  w-100">
+  <div class="hero-items owl-carousel">
+    {% for slider in sliders %}
+      <div class="single-slider-item set-bg" data-setbg="{{slider.banner.url}}"></div>
+      {% endfor %}
+  </div>
+</section>

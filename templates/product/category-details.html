@@ -1,0 +1,41 @@
+{% extends '../base.html' %}
+{% load static %}
+
+{% block title %} {{category.title|title}} {% endblock title %}
+
+{% block content %}
+
+<div class="container-sm">
+  <table class="table">
+    <tbody>
+      {% if products.count > 0 %}
+        {% for product in products %}
+          <tr>
+            <td>{{product.title}}</td>
+            <td>{{product.description}}</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="{% url 'product-details' product.slug %}">
+                <figure>
+                  <img src="{{ product.thumbnail }}" alt="">
+                  </figure>
+                </a>
+            </td>
+            <td>
+              <a href="{% url 'product-details' product.slug %}">
+                <figure>
+                  <img src="{{ product.insizeimage }}" alt="">
+                  </figure>
+                </a>
+            </td>
+          </tr>
+        {% endfor %}
+      {% else %}
+         {% include '../no-result.html' %}
+      {% endif %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock content %}
