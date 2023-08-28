@@ -5,11 +5,13 @@ from .models import (
     Product,
     Slider
 )
+from import_export.admin import ImportExportModelAdmin
 
-class ProductAdmin(admin.ModelAdmin):
+
+class ProductAdmin(ImportExportModelAdmin,admin.ModelAdmin):
     prepopulated_fields = {"slug": ('title',)}
 
-class CategoryAdmin(admin.ModelAdmin):
+class CategoryAdmin(ImportExportModelAdmin,admin.ModelAdmin):
     prepopulated_fields = {"slug": ('title',)}
 
 admin.site.register(Category,CategoryAdmin)

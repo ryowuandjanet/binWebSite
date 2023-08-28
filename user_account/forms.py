@@ -16,9 +16,11 @@ class LoginForm(forms.Form):
             self.fields[field].widget.attrs.update({"class": "form-control"})
 
     username = forms.CharField(
+        label = '用戶名',
         max_length=150
     )
     password = forms.CharField(
+        label = '密碼',
         max_length=150,
         widget=forms.PasswordInput
     )
@@ -27,6 +29,7 @@ class LoginForm(forms.Form):
 class UserRegistrationForm(forms.ModelForm):
 
     password = forms.CharField(
+        label = '密碼',
         max_length=150,
         widget=forms.PasswordInput
     )
@@ -84,6 +87,7 @@ class UserRegistrationForm(forms.ModelForm):
 
 class ChangePasswordForm(forms.Form):
     current_password = forms.CharField(
+        label = '當前密碼',
         max_length=150,
         widget=forms.PasswordInput(attrs={
             'placeholder': '請輸入目前所使用的密碼'

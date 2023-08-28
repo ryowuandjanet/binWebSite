@@ -13,7 +13,7 @@ class AddToCart(generic.View):
         cart = Cart(self.request)
         cart.update(product.id,1)
         return redirect('cart')
-
+        
 class CartItems(generic.TemplateView):
     template_name = 'cart/cart.html'
 
@@ -22,13 +22,13 @@ class CartItems(generic.TemplateView):
         quantity = request.GET.get('quantity',None)
         clear = request.GET.get('clear',False)
         cart = Cart(request)
-        print(cart.coupon,"coupon")
 
         if product_id and quantity:
             product = get_object_or_404(Product,id=product_id)
             if int(quantity) > 0:
                 if product.in_stock:
                     cart.update(int(product_id),int(quantity))
+                    print(quantity,"qu")
                     return redirect('cart')
                 else:
                     messages.warning(request, "Your account expires in three days.")
